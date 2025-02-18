@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Wahrheit2 Визитка на отбора</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .team-container {
+        border: 2px solid #007bff; /* Рамка около всички визитки */
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px 0;
+        background-image: url('assets/img/hero-img.jpg'); /* Фон изображение */
+        background-size: cover;
+        background-position: center;
+        color: white; /* Бял цвят на текста за по-добра четимост */
+    }
+    .card-body{color:white}
+    .team-member {
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: rgba(51, 100, 248, 0.531); /* Полупрозрачен фон */
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .team-member img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+    .team-member h5 {
+        margin-top: 10px;
+    }
+    .team-member p {
+        margin-top: 5px;
+    }
+    .hide-text-speak {
+        display: none;
+      }
+</style>
+</head>
+
+    
+<body>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Wahrheit24</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Начало<br></a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe937Zmn7Dzcdl1_tMNdE8JnuW52ibD9FUINhnYcMmAFrJ0WQ/viewform" target="_blank">Анкета</a></li>
+          <li><a href="page1.html">Резултати от анкета</a></li>
+          <li><a href="index.html#testimonials">Екип</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-4">
+                <h1>Отбор "Wahrheit24"</h1>
+                <p>От VIII "д" клас на "Първа езикова гимназия"</p>
+                <h2>
+                  <strong>Аудиовизитка</strong>
+                  <button id="speakButton" class="btnPlay1" onclick="speakAnswer()"><i class="fas fa-volume-up"></i></button>
+                  <div id="text_vizitka" class="hide-text-speak">
+                    <p>Здравейте! Ние сме отбор Варайт фиер унд цванцик от VIII клас на Първа езикова гимназия. 
+                      Ние сме ученици, които обичат да учат и да се развиват. Готови сме да се справим с всяко предизвикателство 
+                      и да покажем на света, че сме най-добрите. Искаме да ви впечатлим със своите знания и умения!</p>
+                      <p>
+                        Тази страница е родена от магията на минималната човешка намеса. Генерирана е с промпт към мен, вашият изкуствен интелект. 
+                        Моята мисия е да ви бъда полезен и да правя света по-лесен и интригуващ за вас!
+                      </p>
+                      <p> Аз мога да ви бъда полезен при изучаване на чужд език. Например за бързо изработване на интерактивни упражнения, тестове, флашкарти за учене на непознати чужди думи и много други.</i> </p>
+                  </div>
+                </h2>
+            </div>
+        </div>
+        <div class="team-container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card team-member">
+                        <img src="assets/img/testimonials-5.jpg" alt="Иван Иванов">
+                        <div class="card-body">
+                            <h5 class="card-title">Иван Иванов</h5>
+                            <p class="card-text">Ученик</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-member">
+                        <img src="assets/img/testimonials-4.jpg" alt="Мария Петрова">
+                        <div class="card-body">
+                            <h5 class="card-title">Мария Петрова</h5>
+                            <p class="card-text">Ученик</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-member">
+                        <img src="assets/img/testimonials-2.jpg" alt="Георги Димитров">
+                        <div class="card-body">
+                            <h5 class="card-title">Георги Димитров</h5>
+                            <p class="card-text">Ученик</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-member">
+                        <img src="assets/img/testimonials-2.jpg" alt="Елена Георгиева">
+                        <div class="card-body">
+                            <h5 class="card-title">Елена Георгиева</h5>
+                            <p class="card-text">Ученик</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-member">
+                        <img src="assets/img/testimonials-1.jpg" alt="Никола Николов">
+                        <div class="card-body">
+                            <h5 class="card-title">Никола Николов</h5>
+                            <p class="card-text">Ученик</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card team-member">
+                      <img src="assets/img/testimonials-3.jpg" class="testimonial-img" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Анна Иванова</h5>
+                            <p class="card-text">Ученик</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </main>
+
+    <footer id="footer" class="footer accent-background">
+
+      <div class="container">
+        <div class="copyright text-center ">
+          <p> <span><i>Тази страница е генерирана с помоща на промпт към изкуствен интелект и минимална човешка намеса.</i></span>  </p>
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">CyberGleis</strong> </p>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+  
+    </footer>
+  
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+      // Функция за гласово четене
+      function speakText(text) {
+          // Проверка за наличието на SpeechSynthesis API
+          if ('speechSynthesis' in window) {
+              const utterance = new SpeechSynthesisUtterance(text);
+              // Можете да зададете език и други параметри
+              utterance.lang = 'bg-BG'; // Задаване на български език
+              speechSynthesis.speak(utterance);
+          } else {
+              alert('Вашият браузър не поддържа гласово четене.');
+          }
+      }
+
+      function speakAnswer() {
+          const textInputElement = document.querySelector('#text_vizitka');
+          if (textInputElement) {
+              
+              speakText(textInputElement.textContent);
+              
+          }
+      }
+  </script>
+
+</body>
+</html>
