@@ -98,7 +98,9 @@
                   <strong>Аудио</strong>
                   <button id="speakButton" class="btnPlay1" onclick="speakAnswer()"><i class="fas fa-volume-up"></i></button>
                   <div id="text_vizitka" class="hide-text-speak">
-                    Hallo! Wir sind das Team Wahrheit24 aus der 8. Klasse der Ersten Sprachschule. Wir sind Schüler, die Deutsch lernen, gerne lernen und sich weiterentwickeln. Wir sind bereit, jede Herausforderung zu meistern und der Welt zu zeigen, dass wir die Besten sind. Wir möchten euch mit unserem Wissen und Können beeindrucken!
+Hallo! Wir sind das Team Wahrheit24 aus der 8. Klasse der Ersten Sprachschule. Wir sind Schüler, die Deutsch lernen, gerne lernen und sich weiterentwickeln. Wir sind bereit, jede Herausforderung zu meistern und der Welt zu zeigen, dass wir die Besten sind. Wir möchten euch mit unserem Wissen und Können beeindrucken!
+                    </div>
+                  <div id="text_vizitka1" class="hide-text-speak">
 Diese Seite ist aus der Magie minimaler menschlicher Eingriffe entstanden. Sie wurde mit einem Prompt an mich, eure künstliche Intelligenz, generiert. Meine Mission ist es, für euch nützlich zu sein und die Welt für euch einfacher und spannender zu machen!
 Ich kann beim Erlernen einer Fremdsprache helfen. Zum Beispiel, indem ich schnell interaktive Übungen, Tests, Lernkarten für unbekannte Fremdwörter und vieles mehr erstelle.
                     </div>
@@ -204,15 +206,20 @@ Ich kann beim Erlernen einer Fremdsprache helfen. Zum Beispiel, indem ich schnel
 
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=OojlT2ef"></script>
     <script>
-        function speakAnswer() {
-           // const textElement = document.getElementById('text_vizitka');
-            const textElement = document.querySelector('#text_vizitka');
-            if (textElement) {
+        function speakText() {
+            const textElement = document.getElementById('text_vizitka');
+            const textElement1 = document.getElementById('text_vizitka1');
+            if (textElement && textElement1) {
                 const text = textElement.textContent || textElement.innerText;
-                console.log(text);
-                responsiveVoice.speak(text, "Deutsch Male");
+                const text1 = textElement1.textContent || textElement1.innerText;
+                
+                responsiveVoice.speak(text, "Deutsch Female", {
+                    onend: function() {
+                        responsiveVoice.speak(text1, "Deutsch Male");
+                    }
+                });
             } else {
-                console.error('Елементът с ID "text" не е намерен.');
+                console.error('Елементът с ID "text_vizitka" или "text_vizitka1" не е намерен.');
             }
         }
     </script>
