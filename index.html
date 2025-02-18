@@ -27,6 +27,20 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    /* Скриване на елемента на големи екрани */
+    @media (min-width: 769px) {
+      .show-on-mobile {
+        display: none;
+      }
+    }
+    /* Показване на елемента на мобилни екрани */
+    @media (max-width: 768px) {
+      .hide-on-mobile {
+        display: none;
+      }
+    }
+  </style>
 </head> 
 
 <body class="index-page">
@@ -43,7 +57,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Начало<br></a></li>
-          <li><a href="#services">Анкета</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe937Zmn7Dzcdl1_tMNdE8JnuW52ibD9FUINhnYcMmAFrJ0WQ/viewform">Анкета</a></li>
           <li><a href="#results">Резултати от анкета</a></li>
           <li><a href="#testimonials">Екип</a></li>
         </ul>
@@ -68,7 +82,7 @@
     </section><!-- /Hero Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+    <section id="services" class="services section hide-on-mobile">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
